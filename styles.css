@@ -60,4 +60,51 @@ body {
 }
 
 /* Estilo del menu hamburguesa*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
 
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px){
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu-toggle:checked + .hamburger + .menu-items {
+        display: flex;
+    }
+
+    .menu-items li {
+        border-bottom: 1px solid #444;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+}
