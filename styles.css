@@ -107,4 +107,37 @@ body {
     .logo {
         margin-left: 10px;
     }
+
+}
+
+/* Secciones */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.hero {
+    background-color: #ffb703;
+    color: #fff;
+    padding: 150px 20px;
+
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Estilos al menú (contenido) */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
