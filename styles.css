@@ -31,3 +31,33 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Estilos menu en pantallas grandes*/
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.menu-items li a:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* Estilo del menu hamburguesa*/
+
